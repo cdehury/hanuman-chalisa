@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* set default to 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+main .wrapper {
+    padding-top: 20px;
+    display: table;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content-wrapper h1, h2, h3, p {
+    text-align: center;
+}
+body {
+    background: rgb(242, 138, 10);
+    margin: 0;
+    font-family: "Tiro Devanagari Sanskrit";
+    font-style: serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: "Tiro Devanagari Sanskrit";
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 {
+    font-size: 3.6rem;
+}
+.chalisa-meaning h2{
+    color: rgb(0, 22, 224);
+} 
+.chalisa-meaning p{
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+span.initial{
+    color: rgb(0, 22, 224);
+}
+.faqs h3 {
+    color: rgb(0, 22, 224);
+    padding-bottom: 0;
+}
+.faqs p{
+    font-size: 85%;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+.menu {
+    position: fixed;
+    top: 40px;
+    left: 2%;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px){
+    .menu {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 4.7rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+}
+
+/* links */
+a {
+    color: #3c8453;
+}
+a:hover {
+    color: #bcaa96;
+    text-decoration: none;
+}
+footer a {
+    color: #bcaa96;
+}
+footer a:hover {
+    color: #3c8453;
+}
+.socials a{
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+/* HOME
+------------------------------------*/
+.home {
+    background: url(https://hanumanchalisa.world/images/hanuman1.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg {
+    background: rgb(255 255 255 / 0.6);
+    padding: 30px;
+}
+@media screen and (max-width:650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 859px){
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+}
